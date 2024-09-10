@@ -52,10 +52,6 @@ iframe {
     justify-content: center;
 }
 
-#songButton {
-    color
-}
-
 #Description, #DescriptionHeader, #Summary {
     display: flex;
     flex-direction: row;
