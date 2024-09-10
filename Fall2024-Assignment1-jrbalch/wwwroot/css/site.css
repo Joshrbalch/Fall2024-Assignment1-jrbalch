@@ -1,41 +1,66 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
 body {
-    margin-bottom: 60px;
+    background-color: #4cff00; /* Green background */
+    position: relative;
+    font-family: sans-serif, Arial, Helvetica, sans-serif
+}
+
+body::before, body::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 50px; /* Width of the pattern strips on the sides */
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M50 91.6l-3.6-3.3C20 65 0 46.5 0 26.6 0 11.9 11.9 0 26.6 0c7.3 0 14.4 3.1 19.4 8.6C50 3.1 57.1 0 64.4 0 79.1 0 91 11.9 91 26.6c0 19.9-20 38.4-46.4 61.7L50 91.6z" fill="%23FF0000"/></svg>');
+        background-size: 50px 50px;
+        background-repeat: repeat-y;
+}
+
+    body::before {
+        left: 0;
+    }
+
+    body::after {
+        right: 0;
+    }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: #4cff00
+    align-items: center;
+    margin: 5px auto;
+    max-width: 800px;
 }
 
-h1 {
-    color: #000000;
-    text-align: center;
-}
 
-h5 {
-    text-align: center;
+#CoverArt {
+    width: 40%;
+    height: 40%;
+    border-radius: 200%;
+    position: relative;
+    inset: 0px;
+    margin: auto;
 }
 
 iframe {
+
+}
+
+#ImageLink {
+    display: flex;
     justify-content: center;
 }
 
-#CoverArt {
-  width: 30%;
-  height: 30%;
-  justify-content: center;
-  object-fit: cover;
-  margin: 40px;
-  border-radius: 50%;
+#songButton {
+    color
+}
+
+#Description, #DescriptionHeader, #Summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
 }
