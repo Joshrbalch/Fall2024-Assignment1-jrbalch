@@ -12,11 +12,30 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+body {
+    margin-bottom: 60px;
+    justify-content: center;
+    background-color: #4cff00
 }
 
-body {
-  margin-bottom: 60px;
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+iframe {
+    justify-content: center;
+}
+
+#CoverArt {
+  width: 30%;
+  height: 30%;
+  justify-content: center;
+  object-fit: cover;
+  margin: 40px;
+  border-radius: 50%;
 }
