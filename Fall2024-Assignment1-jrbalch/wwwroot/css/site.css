@@ -60,3 +60,11 @@ iframe {
     margin: 50px auto;
     text-align: center;
 }
+
+#Actors, #CastHeader {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    margin: 10px auto;
+    text-align: center;
+}
